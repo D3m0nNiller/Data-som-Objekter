@@ -26,5 +26,8 @@ console.log(person["pet"])
 console.log(person["petname"]);
 
 andenPerson.hobbies.forEach(function(hobby) {
-    console.log(hobby)
-})
+    console.log(hobby);
+});
+
+console.log(andenPerson.pet.type);
+console.log(andenPerson.pet.name)
