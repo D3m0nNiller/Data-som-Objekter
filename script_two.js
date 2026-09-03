@@ -8,6 +8,7 @@ const rootIdDOM = document.querySelector("#root")
 
 students.forEach(function (student) {
     const divElement = document.createElement("div")
+    divElement.classList.add("student")
     divElement.textContent =
         // student.name + ', Alder: ' + student.age + ', uddannelse ' + student.course
         `${student.name}, Alder: ${student.age}, uddannelse: ${student.course}`

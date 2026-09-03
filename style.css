@@ -1,0 +1,16 @@
+.student {
+    background-color: #000;
+    color: #FFF;
+    border-radius: 1.7em;
+    animation: funny 6s infinite linear;
+}
+
+@keyframes funny {
+    0%{background-color: #000; color: #fff;}
+    10%{background-color: red; color: blue;}
+    33%{background-color: yellow; border-radius: 4em;}
+    46%{background-color: pink;}
+    67%{background-color: purple; color: white; border: 0;}
+    89%{background-color: cyan; color: gray; border-radius: 1.7em;}
+    100%{background-color: #000; color: #fff;}
+}
