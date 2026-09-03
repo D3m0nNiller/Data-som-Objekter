@@ -14,3 +14,17 @@ students.forEach(function (student) {
         `${student.name}, Alder: ${student.age}, uddannelse: ${student.course}`
     rootIdDOM.append(divElement)
 })
+
+students.forEach(function(student) {
+    const divElement = document.createElement("div");
+    divElement.classList.add("student");
+
+    const studentHeadLine = document.createElement("h2");
+    studentHeadLine.textContent= student.firstname
+
+    const studentInfo = document.createElement("p");
+    studentInfo.textContent = `${student.name}, Alder: ${student.age}, uddannelse: ${student.course}`
+
+    divElement.append(studentHeadLine, studentInfo)
+    rootIdDOM.append(divElement)
+})
